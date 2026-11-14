@@ -10,7 +10,7 @@ Página canônica: https://www.zuellisites.com/
 
 ## Serviços
 
-Todos pensados primeiro para o celular.
+Modelos pensados para qualquer dispositivo.
 
 - **Site institucional:** para ser encontrado no Google e mostrar quem você é, o que faz e como chegar até você.
 - **Landing page:** uma página, uma oferta, um botão. Para divulgar um serviço, um lançamento ou uma campanha.
