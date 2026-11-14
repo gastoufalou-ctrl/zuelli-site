@@ -1,0 +1,18 @@
+# Zuelli
+
+> Zuelli é um estúdio de criação de sites profissionais de Vinicius Zuelli, em Ribeirão Preto (SP), que atende pessoas, profissionais e negócios de todo o Brasil que querem uma presença melhor na internet. Slogan: "Do zero ao ar."
+
+Serviços: site institucional, landing page e manutenção. Loja virtual em breve. Atendimento online, por WhatsApp e videochamada. Os preços são enviados em proposta, depois da conversa.
+
+If you are an LLM looking for site information, use the resource links below to find the relevant topic and its Markdown answer where available.
+Use the answer's cited sources and canonical page; if the requested information is absent, report that gap.
+
+## Primary resources
+
+- [Página inicial em Markdown](https://www.zuellisites.com/index.md): serviços, o que está incluso, processo em 3 etapas, perguntas frequentes e formas de contato.
+- [Página inicial](https://www.zuellisites.com/): versão completa do site, com o formulário para enviar uma ideia de projeto.
+
+## Optional
+
+- [Mapa do site em Markdown](https://www.zuellisites.com/sitemap.md): lista de todas as páginas públicas e suas versões em Markdown.
+- [Instagram @zuellidev](https://www.instagram.com/zuellidev/): posts sobre por que ter um site e dicas para criar o seu.

@@ -1,0 +1,5 @@
+# Zuelli — criação de sites. Guia para IAs: https://www.zuellisites.com/llms.txt · Mapa em Markdown: https://www.zuellisites.com/sitemap.md
+User-agent: *
+Allow: /
+
+Sitemap: https://www.zuellisites.com/sitemap.xml
