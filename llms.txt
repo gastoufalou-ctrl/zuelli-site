@@ -12,6 +12,8 @@ Use the answer's cited sources and canonical page; if the requested information 
 - [Página inicial em Markdown](https://www.zuellisites.com/index.md): serviços, o que está incluso, processo em 3 etapas, valores, perguntas frequentes e formas de contato.
 - [Página inicial](https://www.zuellisites.com/): versão completa do site, com o formulário para enviar uma ideia de projeto.
 
+- [Projetos em Markdown](https://www.zuellisites.com/projetos/index.md): sites prontos (por enquanto modelos demonstrativos com conteúdo fictício), com o problema de cada um e o que foi feito.
+
 ## Optional
 
 - [Mapa do site em Markdown](https://www.zuellisites.com/sitemap.md): lista de todas as páginas públicas e suas versões em Markdown.

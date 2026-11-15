@@ -17,6 +17,8 @@ Modelos pensados para qualquer dispositivo.
 - **Manutenção:** textos, fotos e ajustes em dia, depois dos 30 dias de suporte inclusos.
 - **Loja virtual (em breve):** catálogo, carrinho e pagamento por Pix ou cartão.
 
+Veja sites prontos em https://www.zuellisites.com/projetos/ (versão Markdown: https://www.zuellisites.com/projetos/index.md).
+
 ## O que está incluso
 
 - Textos escritos junto com o cliente
