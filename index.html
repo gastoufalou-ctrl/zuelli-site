@@ -78,7 +78,7 @@
       "@type": "FAQPage",
       "@id": "https://www.zuellisites.com/#duvidas",
       "mainEntity": [
-        { "@type": "Question", "name": "Quanto custa um site?", "acceptedAnswer": { "@type": "Answer", "text": "Depende do que você precisa. A Zuelli envia uma proposta com valor fechado depois de entender o seu projeto. O pagamento pode ser feito com entrada e parcelas, no Pix ou no cartão de crédito." } },
+        { "@type": "Question", "name": "Quanto custa um site?", "acceptedAnswer": { "@type": "Answer", "text": "Depende do projeto. A pessoa conta a ideia e recebe uma proposta com prévia do site e valor fechado. Custos opcionais: treinamento e manutenção a partir de R$ 150 por mês, banco de dados R$ 100 por mês, métricas R$ 70 por mês e domínio até R$ 100 por ano. Pagamento com entrada e parcelas, no Pix ou no cartão de crédito." } },
         { "@type": "Question", "name": "Quanto tempo leva para o site ficar pronto?", "acceptedAnswer": { "@type": "Answer", "text": "O prazo começa quando você aprova o conteúdo. A data de entrega vem na proposta, e você acompanha cada etapa até o site ir ao ar." } },
         { "@type": "Question", "name": "Preciso entender de tecnologia para ter um site?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A Zuelli cuida dos textos, das fotos, da configuração do domínio e da hospedagem e da publicação. Você só conta como é o seu projeto." } },
         { "@type": "Question", "name": "Preciso ter os textos e as fotos prontos?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Os textos são escritos junto com você, do seu jeito. As fotos você manda pelo celular, e a Zuelli trata e organiza." } },
@@ -193,6 +193,29 @@ section{padding:96px 0}
 .story .fecha h3{font-size:clamp(1.8rem,3.4vw,2.4rem);letter-spacing:-.035em;line-height:1.05}
 .story .fecha p{color:var(--texto-escuro)}
 
+/* valores */
+.val{display:grid;grid-template-columns:1fr 1.15fr;gap:24px;align-items:stretch}
+.val-prop{background:var(--tinta);color:var(--nevoa);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:24px}
+.val-prop h3{font-size:1.6rem;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.val-prop ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.val-prop li{display:flex;gap:16px;align-items:flex-start;color:var(--texto-escuro);font-size:1.05rem}
+.val-prop li b{display:block;color:var(--nevoa);font-weight:600}
+.val-prop .n{flex:none;font-family:var(--mono);font-size:.875rem;color:var(--tinta);background:var(--tq-luz);border-radius:999px;width:34px;height:34px;display:grid;place-items:center;font-weight:700}
+.val-prop .btn{align-self:flex-start;margin-top:auto}
+.val-prop .obs{font-size:.9375rem;color:var(--grafite-luz)}
+.val-ext{background:var(--branco);border:1px solid var(--linha);border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:6px}
+.val-ext h3{font-size:1.4rem;font-weight:600;letter-spacing:-.02em}
+.val-ext>p{color:var(--texto);margin-bottom:10px}
+.val-ext dl{margin:0;display:flex;flex-direction:column}
+.val-ext .item{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:18px 0;border-top:1px solid var(--linha);align-items:baseline}
+.val-ext dt{font-weight:600;font-size:1.05rem}
+.val-ext dd{margin:0}
+.val-ext .pr{font-family:var(--mono);font-weight:700;color:var(--tq);white-space:nowrap;text-align:right}
+.val-ext .pr small{font-weight:400;color:var(--grafite);font-size:.8125rem}
+.val-ext .ds{grid-column:1/-1;color:var(--texto);font-size:.9375rem}
+.val-pag{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--mono);font-size:.875rem;color:var(--grafite)}
+@media (max-width:860px){.val{grid-template-columns:1fr}.val-prop,.val-ext{padding:28px 22px}}
+@media (max-width:520px){.val-ext .item{grid-template-columns:1fr}.val-ext .pr{text-align:left}}
 /* construtor ao vivo */
 .lab{display:flex;flex-direction:column;gap:40px}
 .lab-form{display:grid;grid-template-columns:minmax(260px,1fr) 2.2fr;gap:28px 40px;align-items:start}
@@ -531,6 +554,7 @@ footer .meta a:hover{color:var(--nevoa)}
       <a class="link" href="#experimente">&lt;experimente&gt;</a>
       <a class="link" href="#servicos">&lt;serviços&gt;</a>
       <a class="link" href="#como-funciona">&lt;como-funciona&gt;</a>
+      <a class="link" href="#valores">&lt;valores&gt;</a>
       <a class="link" href="#duvidas">&lt;dúvidas&gt;</a>
       <a class="btn btn-tq" href="#sua-ideia">Conte sua ideia</a>
     </nav>
@@ -701,6 +725,39 @@ footer .meta a:hover{color:var(--nevoa)}
     </div>
   </section>
 
+  <section id="valores" aria-labelledby="t-val">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="tag">&lt;valores&gt;</p>
+        <h2 id="t-val">Quanto custa um site?</h2>
+        <p>Depende bastante do projeto. Uma landing page simples e um site com várias páginas e área do cliente têm valores bem diferentes. Por isso não existe tabela fixa: cada proposta é feita sob medida para o que você precisa.</p>
+      </div>
+      <div class="val">
+        <div class="val-prop rv">
+          <h3>Para saber o valor real do seu site:</h3>
+          <ol>
+            <li><span class="n" aria-hidden="true">1</span><div><b>Conte a sua ideia</b>Mais ou menos o que você tem em mente. Leva 2 minutos.</div></li>
+            <li><span class="n" aria-hidden="true">2</span><div><b>Receba a proposta</b>Com uma prévia do seu site e o valor fechado.</div></li>
+            <li><span class="n" aria-hidden="true">3</span><div><b>Decida com calma</b>Sem compromisso. Se fizer sentido, a gente começa.</div></li>
+          </ol>
+          <a class="btn btn-tq" href="#sua-ideia" style="background:var(--tq-luz);color:var(--tinta)">Quero minha proposta</a>
+          <p class="obs">Textos, fotos, publicação, treinamento e 30 dias de suporte já vêm no valor do projeto.</p>
+        </div>
+        <div class="val-ext rv">
+          <h3>Custos opcionais</h3>
+          <p>Depois que o site vai ao ar, você escolhe se quer algum destes. Nada é obrigatório.</p>
+          <dl>
+            <div class="item"><dt>Treinamento e manutenção</dt><dd class="pr"><small>a partir de </small>R$ 150<small>/mês</small></dd><dd class="ds">Atualizo textos, fotos e preços e tiro suas dúvidas sempre que precisar.</dd></div>
+            <div class="item"><dt>Banco de dados</dt><dd class="pr">R$ 100<small>/mês</small></dd><dd class="ds">Para sites que guardam informações: cadastros, agendamentos, área do cliente.</dd></div>
+            <div class="item"><dt>Métricas</dt><dd class="pr">R$ 70<small>/mês</small></dd><dd class="ds">Quantas pessoas visitam o site, de onde vêm e o que mais procuram.</dd></div>
+            <div class="item"><dt>Domínio</dt><dd class="pr"><small>até </small>R$ 100<small>/ano</small></dd><dd class="ds">O endereço do seu site, como seunegocio.com.br. Pago uma vez por ano.</dd></div>
+          </dl>
+        </div>
+      </div>
+      <p class="val-pag rv"><span>Entrada + parcelas</span><span>Pix</span><span>Cartão de crédito</span></p>
+    </div>
+  </section>
+
   <section id="sua-ideia" aria-labelledby="t-ideia">
     <div class="wrap ideia">
       <aside class="rv">
@@ -778,7 +835,7 @@ footer .meta a:hover{color:var(--nevoa)}
         <h2 id="t-faq">Perguntas frequentes</h2>
       </div>
       <div class="faq">
-        <details><summary>Quanto custa um site?<span class="i" aria-hidden="true">+</span></summary><p>Depende do que você precisa. Depois de entender o seu projeto, eu mando uma proposta com valor fechado. Dá para pagar com entrada e parcelas, no Pix ou no cartão de crédito.</p></details>
+        <details><summary>Quanto custa um site?<span class="i" aria-hidden="true">+</span></summary><p>Depende do projeto. Você conta a sua ideia e recebe uma proposta com prévia do site e valor fechado. Custos opcionais, como manutenção ou domínio, estão explicados em <a href="#valores">valores</a>. Dá para pagar com entrada e parcelas, no Pix ou no cartão de crédito.</p></details>
         <details><summary>Quanto tempo leva para o site ficar pronto?<span class="i" aria-hidden="true">+</span></summary><p>O prazo começa quando você aprova o conteúdo. A data de entrega vem na proposta, e você acompanha cada etapa até o site ir ao ar.</p></details>
         <details><summary>Preciso entender de tecnologia para ter um site?<span class="i" aria-hidden="true">+</span></summary><p>Não. Eu cuido dos textos, das fotos, da configuração do domínio e da hospedagem e da publicação. Você só conta como é o seu projeto.</p></details>
         <details><summary>Preciso ter os textos e as fotos prontos?<span class="i" aria-hidden="true">+</span></summary><p>Não. Os textos a gente escreve junto, do seu jeito. As fotos você manda pelo celular mesmo, e eu trato e organizo.</p></details>

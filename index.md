@@ -32,9 +32,22 @@ Modelos pensados para qualquer dispositivo.
 2. **O meio:** textos, fotos e estrutura montados junto com você, com aprovação em cada etapa.
 3. **No ar:** site publicado, treinamento feito e 30 dias de suporte.
 
+## Valores
+
+O valor depende bastante do projeto, por isso não existe tabela fixa. Para saber o valor real, conte a sua ideia no formulário (https://www.zuellisites.com/#sua-ideia) e receba uma proposta com prévia do site e valor fechado, sem compromisso. Textos, fotos, publicação, treinamento e 30 dias de suporte já vêm no valor do projeto.
+
+Custos opcionais, depois que o site vai ao ar:
+
+- **Treinamento e manutenção:** a partir de R$ 150 por mês
+- **Banco de dados** (cadastros, agendamentos, área do cliente): R$ 100 por mês
+- **Métricas** (visitas, origem e interesse dos visitantes): R$ 70 por mês
+- **Domínio** (ex.: seunegocio.com.br): até R$ 100 por ano
+
+Pagamento com entrada e parcelas, no Pix ou no cartão de crédito.
+
 ## Perguntas frequentes
 
-**Quanto custa um site?** Depende do projeto. Depois da conversa, a Zuelli envia uma proposta com valor fechado. Pagamento com entrada e parcelas, no Pix ou no cartão de crédito.
+**Quanto custa um site?** Depende do projeto. Você conta a ideia e recebe uma proposta com prévia do site e valor fechado. Veja os custos opcionais na seção Valores. Pagamento com entrada e parcelas, no Pix ou no cartão de crédito.
 
 **Quanto tempo leva?** O prazo começa quando o conteúdo é aprovado. A data de entrega vem na proposta.
 
