@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/quanto-custa-um-site",
+      "destination": "/blog/vale-a-pena-ter-um-site/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quanto-custa-um-site/:path*",
+      "destination": "/blog/vale-a-pena-ter-um-site/",
+      "permanent": true
+    }
+  ]
+}
