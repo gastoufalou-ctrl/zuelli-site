@@ -42,7 +42,7 @@ Custos opcionais, depois que o site vai ao ar:
 
 - **Treinamento e manutenção:** a partir de R$ 150 por mês
 - **Banco de dados** (cadastros, agendamentos, área do cliente): R$ 100 por mês
-- **Métricas** (visitas, origem e interesse dos visitantes): R$ 70 por mês
+- **Métricas** (visitas, origem e interesse dos visitantes): R$ 100 por mês
 - **Domínio** (ex.: seunegocio.com.br): até R$ 100 por ano
 
 Pagamento com entrada e parcelas, no Pix ou no cartão de crédito.
