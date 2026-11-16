@@ -13,8 +13,10 @@ Use the answer's cited sources and canonical page; if the requested information 
 - [Página inicial](https://www.zuellisites.com/): versão completa do site, com o formulário para enviar uma ideia de projeto.
 
 - [Projetos em Markdown](https://www.zuellisites.com/projetos/index.md): sites prontos (por enquanto modelos demonstrativos com conteúdo fictício), com o problema de cada um e o que foi feito.
+- [Quanto custa um site? (Markdown)](https://www.zuellisites.com/blog/quanto-custa-um-site/index.md): do que depende o preço de um site, custos recorrentes como o domínio, valores da Zuelli e perguntas frequentes.
 
 ## Optional
 
+- [Blog em Markdown](https://www.zuellisites.com/blog/index.md): lista de todos os artigos do blog da Zuelli.
 - [Mapa do site em Markdown](https://www.zuellisites.com/sitemap.md): lista de todas as páginas públicas e suas versões em Markdown.
 - [Instagram @zuellidev](https://www.instagram.com/zuellidev/): posts sobre por que ter um site e dicas para criar o seu.
