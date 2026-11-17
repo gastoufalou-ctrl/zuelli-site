@@ -17,8 +17,10 @@ body{display:flex;flex-direction:column;background:var(--bg);color:var(--ink);fo
 iframe{border:0;width:100%;height:100%;background:#fff}
 .phone iframe{width:390px;max-width:100%;border:8px solid #111;border-radius:30px}
 :focus-visible{outline:3px solid #FF5A1F;outline-offset:2px}
+
+.bar .zv-voltar{flex:none;display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--ln);border-radius:10px;color:inherit}
 </style></head><body>
-<div class="bar"><button id="home">Início</button><span class="url" id="url" aria-live="polite">/</span>
+<div class="bar"><a class="zv-voltar" href="/projetos/" aria-label="Voltar para os projetos da Zuelli" title="Voltar para os projetos da Zuelli"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a><button id="home">Início</button><span class="url" id="url" aria-live="polite">/</span>
 <button id="d" aria-pressed="true">Computador</button><button id="m" aria-pressed="false">Celular</button></div>
 <div class="stage" id="stage"><iframe id="fr" title="Prévia da loja" sandbox="allow-scripts allow-same-origin allow-popups"></iframe></div>
 <script>
