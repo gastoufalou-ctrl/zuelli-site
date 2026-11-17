@@ -119,6 +119,22 @@ h1,h2,h3,p{margin:0}
 .nav a.link:hover{color:var(--nevoa)}
 .nav .btn{min-height:44px;padding:0 18px;font-size:.9375rem}
 @media (max-width:900px){.nav a.link{display:none}}
+.burger,.mmenu{display:none}
+.burger{width:44px;height:44px;border-radius:12px;border:1px solid var(--linha-escura);background:transparent;cursor:pointer;place-items:center;align-content:center;gap:5px;padding:0;flex:none}
+.burger span{display:block;width:18px;height:2px;border-radius:2px;background:var(--nevoa);transition:.25s}
+.top.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.top.open .burger span:nth-child(2){opacity:0}
+.top.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:900px){
+.nav{gap:10px}.burger{display:grid}
+.mmenu{display:block;position:absolute;left:0;right:0;top:100%;background:var(--tinta);border-bottom:1px solid var(--linha-escura);box-shadow:0 24px 40px -24px rgba(0,0,0,.6);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.22s}
+.top.open .mmenu{opacity:1;visibility:visible;transform:none}
+.top .mmenu .wrap{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;min-height:0;padding-top:6px;padding-bottom:22px;text-align:left}
+.mmenu a{font-family:var(--mono);font-size:1rem;color:var(--grafite-luz);text-decoration:none;padding:15px 0;border-bottom:1px solid var(--linha-escura)}
+.mmenu a:hover,.mmenu a[aria-current]{color:var(--tq-luz)}
+.mmenu .btn{margin-top:18px;align-self:flex-start;border:0;font-family:inherit;color:var(--tinta);padding:0 22px;min-height:48px}
+}
+@media (max-width:400px){.nav .btn{display:none}}
 
 /* hero */
 .hero{padding:72px 0 96px;overflow:hidden;position:relative}
@@ -262,8 +278,22 @@ footer .meta a:hover{color:var(--nevoa)}
       <a class="link" href="/blog/" aria-current="page">&lt;blog&gt;</a>
       <a class="link" href="/#duvidas">&lt;dúvidas&gt;</a>
       <a class="btn btn-tq" href="/#sua-ideia">Conte sua ideia</a>
+      <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
     </nav>
   </div>
+  <div class="mmenu" id="mmenu">
+    <div class="wrap">
+      <a href="/#experimente">&lt;experimente&gt;</a>
+      <a href="/#servicos">&lt;serviços&gt;</a>
+      <a href="/projetos/">&lt;projetos&gt;</a>
+      <a href="/#como-funciona">&lt;como-funciona&gt;</a>
+      <a href="/#valores">&lt;valores&gt;</a>
+      <a href="/blog/">&lt;blog&gt;</a>
+      <a href="/#duvidas">&lt;dúvidas&gt;</a>
+      <a class="btn btn-tq" href="/#sua-ideia">Conte sua ideia</a>
+    </div>
+  </div>
+  <script>(function(){var t=document.currentScript.closest('.top'),b=t.querySelector('.burger');function f(v){t.classList.toggle('open',v);b.setAttribute('aria-expanded',v);b.setAttribute('aria-label',v?'Fechar menu':'Abrir menu')}b.addEventListener('click',function(){f(!t.classList.contains('open'))});t.querySelectorAll('.mmenu a').forEach(function(a){a.addEventListener('click',function(){f(false)})});addEventListener('keydown',function(e){if(e.key==='Escape')f(false)})})();</script>
   <div class="progress" aria-hidden="true"></div>
 </header>
 <main id="conteudo">
