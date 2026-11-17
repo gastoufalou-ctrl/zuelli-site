@@ -77,6 +77,12 @@
   .nav ul{display:flex;gap:30px;list-style:none;font-size:.84rem;letter-spacing:.06em}
   .nav ul a:hover{color:var(--brown)}
   .nav .btn{padding:10px 20px;font-size:.78rem}
+  .burger,.m-only{display:none}
+  .burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;place-items:center;align-content:center;gap:5px;padding:0}
+  .burger span{display:block;width:18px;height:1.5px;background:var(--espresso);transition:.3s}
+  header.open .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  header.open .burger span:nth-child(2){opacity:0}
+  header.open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 
   /* Fotos (trocar pelas reais) */
   .ph{position:relative;width:100%;height:100%;background:linear-gradient(160deg,#E8DCCF,#D7C3B0 55%,#C4AC97);display:grid;place-items:center;color:rgba(59,45,36,.5);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;text-align:center}
@@ -166,7 +172,15 @@
   @media (max-width:900px){
     :root{--pad:56px}
     .nav{height:66px}
-    .nav ul{display:none}
+    .nav{gap:10px}
+    .nav .btn{margin-left:auto}
+    .burger{display:grid}
+    .m-only{display:block}
+    header.open{background:var(--cream);box-shadow:0 1px 0 var(--line)}
+    .nav ul{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:4px 20px 22px;background:var(--cream);box-shadow:0 18px 30px -18px rgba(59,45,36,.35);opacity:0;visibility:hidden;transform:translateY(-8px);transition:.25s}
+    header.open .nav ul{opacity:1;visibility:visible;transform:none}
+    .nav ul a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:1.35rem;letter-spacing:0}
+    .nav ul .m-only a{border:0;margin-top:14px;font-family:var(--sans);font-size:.86rem;letter-spacing:.06em;color:var(--brown)}
     .hero{padding-top:96px}
     .hero-grid,.about-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}
     .hero-grid{gap:30px}
@@ -198,13 +212,15 @@
     <a href="#" class="logo" aria-label="Lume Clinic">
       <span class="name">Lume</span><span class="bar"></span><span class="sub">odontologia integrada</span><span class="clinic">clinic</span>
     </a>
-    <ul>
+    <ul id="menu">
       <li><a href="#sobre">A clínica</a></li>
       <li><a href="#tratamentos">Tratamentos</a></li>
       <li><a href="#resultados">Resultados</a></li>
       <li><a href="#contato">Contato</a></li>
+      <li class="m-only"><a class="wa-link" href="#" target="_blank" rel="noopener">Agendar pelo WhatsApp →</a></li>
     </ul>
     <a class="btn btn-dark wa-link" href="#" target="_blank" rel="noopener">Agendar</a>
+    <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -353,6 +369,11 @@
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   document.getElementById('y').textContent = new Date().getFullYear();
+  const bt = document.querySelector('.burger');
+  const abre = v => { h.classList.toggle('open', v); bt.setAttribute('aria-expanded', v); bt.setAttribute('aria-label', v ? 'Fechar menu' : 'Abrir menu'); };
+  bt.addEventListener('click', () => abre(!h.classList.contains('open')));
+  document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => abre(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') abre(false); });
 </script>
 </body>
 </html>
