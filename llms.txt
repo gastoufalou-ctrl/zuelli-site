@@ -13,6 +13,7 @@ Use the answer's cited sources and canonical page; if the requested information 
 - [Página inicial](https://www.zuellisites.com/): versão completa do site, com o formulário para enviar uma ideia de projeto.
 
 - [Projetos em Markdown](https://www.zuellisites.com/projetos/index.md): sites prontos (por enquanto modelos demonstrativos com conteúdo fictício), com o problema de cada um e o que foi feito.
+- [Por que meu site não aparece no Google? (Markdown)](https://www.zuellisites.com/blog/por-que-meu-site-nao-aparece-no-google/index.md): como descobrir se o problema é de indexação ou de posição, os 7 motivos mais comuns (site novo, Search Console, noindex/robots.txt, texto pouco claro, lentidão no celular, falta de links, Google Perfil da Empresa) e checklist.
 - [Vale a pena ter um site? (Markdown)](https://www.zuellisites.com/blog/vale-a-pena-ter-um-site/index.md): por que ter site mesmo tendo Instagram, o que um site faz pelo negócio, checklist do que ele precisa ter e do que depende o preço.
 
 ## Optional
