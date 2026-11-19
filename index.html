@@ -904,9 +904,11 @@ footer .meta a:hover{color:var(--nevoa)}
       <a href="https://wa.me/5516991112537" target="_blank" rel="noopener">WhatsApp · (16) 99111-2537</a>
       <a href="/projetos/">Projetos</a>
       <a href="/blog/">Blog</a>
+      <a href="/privacidade/">Privacidade</a>
       <span>© <span id="ano">2026</span> Zuelli</span>
     </div>
   </div>
+  <script src="/medicao.js" defer></script>
 </footer>
 
 <script>
@@ -1139,6 +1141,7 @@ footer .meta a:hover{color:var(--nevoa)}
       if (!res.success) throw new Error(res.message || 'erro');
       $('form-campos').style.display = 'none';
       var s = $('form-sucesso'); s.classList.add('on'); s.focus();
+      if (window.zvEvento) zvEvento('generate_lead', { method: 'formulario', tipo: dados.tipo });
       form.reset(); contador.textContent = '0 / 2000';
     }).catch(function () {
       fStatus.className = 'form-status fail';

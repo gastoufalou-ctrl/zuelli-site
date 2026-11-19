@@ -19,5 +19,6 @@ Use the answer's cited sources and canonical page; if the requested information 
 ## Optional
 
 - [Blog em Markdown](https://www.zuellisites.com/blog/index.md): lista de todos os artigos do blog da Zuelli.
+- [Privacidade e cookies (Markdown)](https://www.zuellisites.com/privacidade/index.md): como o site trata dados do formulário e cookies de medição (só com consentimento).
 - [Mapa do site em Markdown](https://www.zuellisites.com/sitemap.md): lista de todas as páginas públicas e suas versões em Markdown.
 - [Instagram @zuellidev](https://www.instagram.com/zuellidev/): posts sobre por que ter um site e dicas para criar o seu.
