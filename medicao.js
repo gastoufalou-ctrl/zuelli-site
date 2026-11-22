@@ -34,7 +34,7 @@
     var a = e.target.closest && e.target.closest('a[href]');
     if (!a) return;
     var href = a.getAttribute('href') || '';
-    var onde = a.closest('header') ? 'topo' : a.closest('footer') ? 'rodape' : a.closest('form') ? 'formulario' : 'pagina';
+    var onde = a.getAttribute('data-local') || (a.closest('header') ? 'topo' : a.closest('footer') ? 'rodape' : a.closest('form') ? 'formulario' : 'pagina');
     if (/wa\.me|api\.whatsapp/.test(href)) window.zvEvento('generate_lead', { method: 'whatsapp', link_location: onde, page_path: location.pathname });
     else if (/instagram\.com/.test(href)) window.zvEvento('click_instagram', { link_location: onde });
   }, true);
